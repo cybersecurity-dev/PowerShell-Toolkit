@@ -1,0 +1,1 @@
+Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, InstallDate, OSBuildNumber | Format-List
