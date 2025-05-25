@@ -2,7 +2,7 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
-
+## Install PowerShell
 ```powershell
 winget search Microsoft.PowerShell
 ```
@@ -10,4 +10,23 @@ winget search Microsoft.PowerShell
 winget install --id Microsoft.PowerShell --source winget
 ```
 
+## SSH Operations
+Get Services Status:
+```powershell
+Get-Service -Name *ssh*
+```
+Restart SSH services
+```powershell
+Get-Service -Name sshd|Restrat-Service -force
+```
+
+Check SSH Services Start Type
+```powershell
+Get-Service -Name sshd | Select StartType
+```
+
+Set SSH Services Startup Type
+```powershell
+Get-Service -Name sshd | Set-Service -StartupType Automatic
+```
 
