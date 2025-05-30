@@ -2,12 +2,20 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
-## Install PowerShell
+## Install [PowerShell](https://github.com/PowerShell/PowerShell)
 ```powershell
 winget search Microsoft.PowerShell
 ```
 ```powershell
 winget install --id Microsoft.PowerShell --source winget
+```
+## Install [Edit](https://github.com/microsoft/edit)
+
+```powershell
+winget search Microsoft.Edit
+```
+```powershell
+winget install --id Microsoft.Edit --source winget
 ```
 
 ## SSH Operations
