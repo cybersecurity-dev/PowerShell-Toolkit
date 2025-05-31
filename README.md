@@ -17,6 +17,14 @@ winget search Microsoft.Edit
 ```powershell
 winget install --id Microsoft.Edit --source winget
 ```
+## Install [OpenSSH](https://www.openssh.com/)
+
+```powershell
+winget search Microsoft.OpenSSH
+```
+```powershell
+winget install --id Microsoft.OpenSSH.Preview --source winget
+```
 
 ## SSH Operations
 Get Services Status:
