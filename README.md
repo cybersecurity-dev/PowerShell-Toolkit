@@ -9,6 +9,8 @@ winget search Microsoft.PowerShell
 ```powershell
 winget install --id Microsoft.PowerShell --source winget
 ```
+<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
+
 ## Install [Edit](https://github.com/microsoft/edit)
 
 ```powershell
@@ -17,6 +19,8 @@ winget search Microsoft.Edit
 ```powershell
 winget install --id Microsoft.Edit --source winget
 ```
+<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
+
 ## Install [OpenSSH](https://www.openssh.com/)
 
 ```powershell
@@ -25,6 +29,7 @@ winget search Microsoft.OpenSSH
 ```powershell
 winget install --id Microsoft.OpenSSH.Preview --source winget
 ```
+<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
 ## SSH Operations
 Get Services Status:
@@ -45,4 +50,4 @@ Set SSH Services Startup Type
 ```powershell
 Get-Service -Name sshd | Set-Service -StartupType Automatic
 ```
-
+<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
