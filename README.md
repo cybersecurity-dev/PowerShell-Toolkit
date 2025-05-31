@@ -2,7 +2,7 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
-## Install [PowerShell](https://github.com/PowerShell/PowerShell)
+## Install [PowerShell](https://github.com/PowerShell/PowerShell) via [winget](https://winget.run/)
 ```powershell
 winget search Microsoft.PowerShell
 ```
@@ -11,7 +11,7 @@ winget install --id Microsoft.PowerShell --source winget
 ```
 <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
-## Install [Edit](https://github.com/microsoft/edit)
+## Install [Edit](https://github.com/microsoft/edit) via [winget](https://winget.run/)
 
 ```powershell
 winget search Microsoft.Edit
@@ -21,7 +21,7 @@ winget install --id Microsoft.Edit --source winget
 ```
 <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
-## Install [OpenSSH](https://www.openssh.com/)
+## Install [OpenSSH](https://www.openssh.com/) via [winget](https://winget.run/)
 
 ```powershell
 winget search Microsoft.OpenSSH
