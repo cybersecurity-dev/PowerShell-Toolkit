@@ -51,3 +51,112 @@ Set SSH Services Startup Type
 Get-Service -Name sshd | Set-Service -StartupType Automatic
 ```
 <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
+
+
+## Install Applications via Windows Package Manager
+### Development Tools
+```powershell
+winget install -e --id KDE.Kate
+```
+```powershell
+winget install -e --id KDE.kdevelop
+```
+```powershell
+winget install -e --id KDE.KDiff3
+```
+```powershell
+winget install -e --id JFrog.Conan
+```
+```powershell
+winget install -e --id Python.Python.3.11
+```
+```powershell
+winget install -e --id Anaconda.Miniconda3
+```
+```powershell
+winget install -e --id Anaconda.Anaconda3
+```
+```powershell
+winget install -e --id SublimeHQ.SublimeText.4
+```
+```powershell
+winget install -e --id Notepad++.Notepad++
+```
+```powershell
+winget install -e --id Cppcheck.Cppcheck
+```
+```powershell
+winget install -e --id Neovim.Neovim
+```
+```powershell
+winget install -e --id dbeaver.dbeaver
+```
+### Browsers 
+```powershell
+winget install -e --id Huawei.HuaweiBrowser
+```
+```powershell
+winget install -e --id TorProject.TorBrowser
+```
+```powershell
+winget install -e --id Brave.Brave
+```
+```powershell
+winget install -e --id Yandex.Browser
+```
+```powershell
+winget install -e --id Maxthon.Maxthon.6
+```
+### Instant Messaging
+```powershell
+winget install -e --id WhatsApp.WhatsApp
+```
+```powershell
+winget install -e --id Kakao.KakaoTalk
+```
+```powershell
+winget install -e --id OpenWhisperSystems.Signal
+```
+```powershell
+winget install -e --id TeamSpeakSystems.TeamSpeakClient
+```
+### Others
+```powershell
+winget install -e --id Ghisler.TotalCommander
+```
+```powershell
+winget install -e --id KDE.kile
+```
+```powershell
+winget install -e --id KDE.Kdenlive
+```
+```powershell
+winget install -e --id KDE.Amarok
+```
+```powershell
+winget install -e --id KDE.kstars
+```
+```powershell
+winget install -e --id KDE.kmymoney
+```
+```powershell
+winget install -e --id CPUID.CPU-Z
+```
+```powershell
+winget install -e --id Intel.ProcessorDiagnosticTool
+```
+```powershell
+winget install -e --id Intel.Iometer
+```
+```powershell
+winget install -e --id AMD.OCAT
+```
+```powershell
+winget install -e --id LibreWolf.LibreWolf
+```
+```powershell
+winget install -e --id OBSProject.OBSStudio
+```
+```powershell
+winget install -e --id Obsidian.Obsidian
+```
