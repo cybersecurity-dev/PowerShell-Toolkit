@@ -56,10 +56,17 @@ Get-Service -Name sshd | Set-Service -StartupType Automatic
 ## Install Applications via Windows Package Manager
 ### Programming Language
 ```powershell
-winget install -e --id GoLang.Go.1.18
+winget install -e --id GoLang.Go
 ```
 ```powershell
 winget install -e --id Python.Python.3.11
+```
+### IDEs
+```powershell
+winget install -e --id=JetBrains.PyCharm.Community
+```
+```powershell
+winget install -e --id=JetBrains.IntelliJIDEA.Community
 ```
 ### Development Tools
 ```powershell
