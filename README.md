@@ -63,10 +63,10 @@ winget install -e --id Python.Python.3.11
 ```
 ### IDEs
 ```powershell
-winget install -e --id=JetBrains.PyCharm.Community
+winget install -e --id JetBrains.PyCharm.Community
 ```
 ```powershell
-winget install -e --id=JetBrains.IntelliJIDEA.Community
+winget install -e --id JetBrains.IntelliJIDEA.Community
 ```
 ### Development Tools
 ```powershell
@@ -135,7 +135,7 @@ winget install -e --id Kakao.KakaoTalk
 winget install -e --id OpenWhisperSystems.Signal
 ```
 ```powershell
-winget install -e --id=Microsoft.Teams
+winget install -e --id Microsoft.Teams
 ```
 ```powershell
 winget install -e --id TeamSpeakSystems.TeamSpeakClient
@@ -154,7 +154,7 @@ winget install -e --id KDE.Kdenlive
 winget install -e --id KDE.Amarok
 ```
 ```powershell
-winget install -e --id KDE.kstars
+winget install -e --id KDE.KStars
 ```
 ```powershell
 winget install -e --id KDE.kmymoney
@@ -178,5 +178,5 @@ winget install -e --id OBSProject.OBSStudio
 winget install -e --id Obsidian.Obsidian
 ```
 ```powershell
-winget install -e --id=RoyalApps.RoyalTS.7
+winget install -e --id RoyalApps.RoyalTS.7
 ```
