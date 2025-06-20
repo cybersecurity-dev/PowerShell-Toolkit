@@ -121,6 +121,9 @@ winget install -e --id Yandex.Browser
 ```powershell
 winget install -e --id Maxthon.Maxthon.6
 ```
+```powershell
+winget install -e --id=Vivaldi.Vivaldi
+```
 ### Instant Messaging
 ```powershell
 winget install -e --id WhatsApp.WhatsApp
@@ -130,6 +133,9 @@ winget install -e --id Kakao.KakaoTalk
 ```
 ```powershell
 winget install -e --id OpenWhisperSystems.Signal
+```
+```powershell
+winget install -e --id=Microsoft.Teams
 ```
 ```powershell
 winget install -e --id TeamSpeakSystems.TeamSpeakClient
@@ -170,4 +176,7 @@ winget install -e --id OBSProject.OBSStudio
 ```
 ```powershell
 winget install -e --id Obsidian.Obsidian
+```
+```powershell
+winget install -e --id=RoyalApps.RoyalTS.7
 ```
