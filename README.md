@@ -54,6 +54,13 @@ Get-Service -Name sshd | Set-Service -StartupType Automatic
 
 
 ## Install Applications via Windows Package Manager
+### Programming Language
+```powershell
+winget install -e --id GoLang.Go.1.18
+```
+```powershell
+winget install -e --id Python.Python.3.11
+```
 ### Development Tools
 ```powershell
 winget install -e --id KDE.Kate
@@ -66,9 +73,6 @@ winget install -e --id KDE.KDiff3
 ```
 ```powershell
 winget install -e --id JFrog.Conan
-```
-```powershell
-winget install -e --id Python.Python.3.11
 ```
 ```powershell
 winget install -e --id Anaconda.Miniconda3
@@ -91,7 +95,10 @@ winget install -e --id Neovim.Neovim
 ```powershell
 winget install -e --id dbeaver.dbeaver
 ```
-### Browsers 
+### Browsers
+```powershell
+winget install -e --id LibreWolf.LibreWolf
+```
 ```powershell
 winget install -e --id Huawei.HuaweiBrowser
 ```
@@ -150,9 +157,6 @@ winget install -e --id Intel.Iometer
 ```
 ```powershell
 winget install -e --id AMD.OCAT
-```
-```powershell
-winget install -e --id LibreWolf.LibreWolf
 ```
 ```powershell
 winget install -e --id OBSProject.OBSStudio
