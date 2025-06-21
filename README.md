@@ -52,7 +52,32 @@ Get-Service -Name sshd | Set-Service -StartupType Automatic
 ```
 <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
-
+## Listen Radio
+```powershell
+$mediaPlayer = New-Object system.windows.media.mediaplayer
+```
+#### [Swiss Classic](https://www.radioswissclassic.ch/en)
+```powershell
+$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsc_de/mp3/128')
+```
+```powershell
+$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsc_fr/mp3/128')
+```
+#### [Swiss Jazz](https://www.radioswissjazz.ch/en/)
+```powershell
+$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsj/mp3/128')
+```
+#### [Swiss Pop](https://www.radioswisspop.ch/en)
+```powershell
+$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsp/mp3/128')
+```
+#### Play-Pause
+```powershell
+$mediaPlayer.Play()
+```
+```powershell
+$mediaPlayer.Pause()
+```
 ## Install Applications via Windows Package Manager
 ### Programming Language
 ```powershell
