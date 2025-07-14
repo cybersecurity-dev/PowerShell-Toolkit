@@ -80,12 +80,22 @@ $mediaPlayer.Pause()
 ```
 ## Install Applications via Windows Package Manager
 ### Programming Language
-```powershell
-winget install -e --id GoLang.Go
-```
-```powershell
-winget install -e --id Python.Python.3.11
-```
+* [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#)
+  ```powershell
+  winget install -e --id GoLang.Go
+  ```
+* [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+  ```powershell
+  winget install -e --id Python.Python.3.11
+  ```
+* [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#)
+  ```powershell
+  winget install -e --id Rustlang.Rust.GNU
+  ```
+  ```powershell
+  winget install -e --id Rustlang.Rust.MSVC
+  ```
+
 ### IDEs
 ```powershell
 winget install -e --id JetBrains.PyCharm.Community
