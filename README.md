@@ -89,7 +89,7 @@ $mediaPlayer.Pause()
 ```
 ## Install Applications via Windows Package Manager
 ### Programming Language
-* [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
+* [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="cc"></a>
   * MSVC 
       ```powershell
       winget install -e --id Microsoft.VisualStudio.2022.BuildTools
