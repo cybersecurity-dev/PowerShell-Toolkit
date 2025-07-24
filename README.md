@@ -89,7 +89,7 @@ $mediaPlayer.Pause()
 ```
 ## Install Applications via Windows Package Manager
 ### Programming Language
-* [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="cc"></a>
+* [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="c-cpp"></a>
   * MSVC 
       ```powershell
       winget install -e --id Microsoft.VisualStudio.2022.BuildTools
@@ -102,16 +102,15 @@ $mediaPlayer.Pause()
      ```powershell
      winget install -e --id Cygwin.Cygwin 
      ```
-  
-* [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#)
+* [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#) <a id="go"></a>
   ```powershell
   winget install -e --id GoLang.Go
   ```
-* [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+* [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) <a id="python"></a>
   ```powershell
   winget install -e --id Python.Python.3.11
   ```
-* [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#)
+* [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#) <a id="rust"></a>
   ```powershell
   winget install -e --id Rustlang.Rust.GNU
   ```
