@@ -242,3 +242,15 @@ winget install -e --id Obsidian.Obsidian
 ```powershell
 winget install -e --id RoyalApps.RoyalTS.7
 ```
+
+##
+
+### Contributing
+
+[Contributions of any kind welcome, just follow the guidelines](contributing.md)!
+
+### Contributors
+
+[Thanks goes to these contributors](https://github.com/cybersecurity-dev/PowerShell-Toolkit/graphs/contributors)!
+
+[🔼 Back to top](#powershell-toolkit-a-versatile-toolset-for-windows)
