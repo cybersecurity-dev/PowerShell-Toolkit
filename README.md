@@ -44,6 +44,31 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
 
+## Useful PowerShell "aliases"
+* Quick directory listing (like ll in Linux):
+    ```powershell
+    Set-Alias ll Get-ChildItem
+    ```
+* Detailed directory listing
+    ```powwrshell
+    function la { Get-ChildItem -Force }
+    ```
+* Go up one directory
+    ```powershell
+    function .. { Set-Location .. }
+    ```
+* Go up two directories
+    ```powershell
+    function ... { Set-Location ../.. }
+    ```
+* Open current folder in Explorer:
+    ```powershell
+    function open { explorer . }
+    ```
+* Clear screen:
+    ```powershell
+    Set-Alias c Clear-Host
+    ```
 
 ##
 
