@@ -20,261 +20,30 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
-## Install [PowerShell](https://github.com/PowerShell/PowerShell) via [winget](https://winget.run/)
-```powershell
-winget search Microsoft.PowerShell
-```
-```powershell
-winget install --id Microsoft.PowerShell --source winget
-```
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
-## Install [Edit](https://github.com/microsoft/edit) via [winget](https://winget.run/)
+## Add a function
 
 ```powershell
-winget search Microsoft.Edit
+notepad $PROFILE
+#if you got error:
+New-Item -ItemType File -Path $PROFILE -Force
+notepad $PROFILE
 ```
-```powershell
-winget install --id Microsoft.Edit --source winget
+Adding function:
 ```
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-## Install [OpenSSH](https://www.openssh.com/) via [winget](https://winget.run/)
-
-```powershell
-winget search Microsoft.OpenSSH
+function ssh_remoteserver {
+    ssh username@remoteserver
+}
 ```
+Apply immediately:
 ```powershell
-winget install --id Microsoft.OpenSSH.Preview --source winget
-```
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-## SSH Operations
-Get Services Status:
-```powershell
-Get-Service -Name *ssh*
-```
-Restart SSH services
-```powershell
-Get-Service -Name sshd|Restrat-Service -force
+. $PROFILE
+#if you got error:
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+. $PROFILE
 ```
 
-Check SSH Services Start Type
-```powershell
-Get-Service -Name sshd | Select StartType
-```
 
-Set SSH Services Startup Type
-```powershell
-Get-Service -Name sshd | Set-Service -StartupType Automatic
-```
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-## Install Applications via Windows Package Manager
-
-### Development Toolchain
-* [![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#) [![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#) <a id="install-c-cpp"></a>
-  * MSVC 
-      ```powershell
-      winget install -e --id Microsoft.VisualStudio.2022.BuildTools
-      ```
-   * LLVM 
-     ```powershell
-     winget install -e --id LLVM.LLVM
-     ```  
-   * GCC via [Cygwin](https://www.cygwin.com/)
-     ```powershell
-     winget install -e --id Cygwin.Cygwin 
-     ```
-  * GCC via [MSYS2](https://www.msys2.org/)
-     ```powershell
-     winget install -e --id MSYS2.MSYS2
-     ```
-     
-* [![Go](https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white)](#) <a id="install-go"></a>
-  ```powershell
-  winget install -e --id GoLang.Go
-  ```
-* [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#) <a id="install-python"></a>
-  ```powershell
-  winget install -e --id Python.Python.3.11
-  ```
-* [![Rust](https://img.shields.io/badge/Rust-%23000000.svg?e&logo=rust&logoColor=white)](#) <a id="install-rust"></a>
-  ```powershell
-  winget install -e --id Rustlang.Rust.GNU
-  ```
-  ```powershell
-  winget install -e --id Rustlang.Rust.MSVC
-  ```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-### IDEs
-```powershell
-winget install -e --id JetBrains.PyCharm.Community
-```
-```powershell
-winget install -e --id JetBrains.IntelliJIDEA.Community
-```
-### Development Tools
-```powershell
-winget install -e --id KDE.KDiff3
-```
-```powershell
-winget install -e --id JFrog.Conan
-```
-```powershell
-winget install -e --id Anaconda.Miniconda3
-```
-```powershell
-winget install -e --id Anaconda.Anaconda3
-```
-```powershell
-winget install -e --id Cppcheck.Cppcheck
-```
-```powershell
-winget install -e --id dbeaver.dbeaver
-```
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-#### Text Editor for Code
-
-```powershell
-winget install -e --id Microsoft.VisualStudioCode
-```
-```powershell
-winget install -e --id SublimeHQ.SublimeText.4
-```
-```powershell
-winget install -e --id KDE.Kate
-```
-```powershell
-winget install -e --id KDE.kdevelop
-```
-```powershell
-winget install -e --id Notepad++.Notepad++
-```
-```powershell
-winget install -e --id Neovim.Neovim
-```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-### Browsers
-```powershell
-winget install -e --id LibreWolf.LibreWolf
-```
-```powershell
-winget install -e --id Huawei.HuaweiBrowser
-```
-```powershell
-winget install -e --id TorProject.TorBrowser
-```
-```powershell
-winget install -e --id Brave.Brave
-```
-```powershell
-winget install -e --id Yandex.Browser
-```
-```powershell
-winget install -e --id Maxthon.Maxthon.6
-```
-```powershell
-winget install -e --id=Vivaldi.Vivaldi
-```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-## Listen Radio
-```powershell
-$mediaPlayer = New-Object system.windows.media.mediaplayer
-```
-#### [Swiss Classic](https://www.radioswissclassic.ch/en)
-```powershell
-$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsc_de/mp3/128')
-```
-```powershell
-$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsc_fr/mp3/128')
-```
-#### [Swiss Jazz](https://www.radioswissjazz.ch/en/)
-```powershell
-$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsj/mp3/128')
-```
-#### [Swiss Pop](https://www.radioswisspop.ch/en)
-```powershell
-$mediaPlayer.open('https://stream.srg-ssr.ch/srgssr/rsp/mp3/128')
-```
-#### Play-Pause
-```powershell
-$mediaPlayer.Play()
-```
-```powershell
-$mediaPlayer.Pause()
-```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-### Instant Messaging
-```powershell
-winget install -e --id WhatsApp.WhatsApp
-```
-```powershell
-winget install -e --id Kakao.KakaoTalk
-```
-```powershell
-winget install -e --id OpenWhisperSystems.Signal
-```
-```powershell
-winget install -e --id Microsoft.Teams
-```
-```powershell
-winget install -e --id TeamSpeakSystems.TeamSpeakClient
-```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
-
-### Others
-```powershell
-winget install -e --id Ghisler.TotalCommander
-```
-```powershell
-winget install -e --id KDE.kile
-```
-```powershell
-winget install -e --id KDE.Kdenlive
-```
-```powershell
-winget install -e --id KDE.Amarok
-```
-```powershell
-winget install -e --id KDE.KStars
-```
-```powershell
-winget install -e --id KDE.kmymoney
-```
-```powershell
-winget install -e --id CPUID.CPU-Z
-```
-```powershell
-winget install -e --id Intel.ProcessorDiagnosticTool
-```
-```powershell
-winget install -e --id Intel.Iometer
-```
-```powershell
-winget install -e --id AMD.OCAT
-```
-```powershell
-winget install -e --id OBSProject.OBSStudio
-```
-```powershell
-winget install -e --id Obsidian.Obsidian
-```
-```powershell
-winget install -e --id RoyalApps.RoyalTS.7
-```
-
-<img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 
 ##
 
