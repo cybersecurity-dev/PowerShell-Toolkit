@@ -21,6 +21,13 @@
 </p>
 
 
+## Network Tools
+
+```powershell
+Get-NetConnectionProfile 
+Set-NetConnectionProfile -Name "NetworkName" -NetworkCategory Private #(Public)
+```
+
 ## Add a function
 
 ```powershell
